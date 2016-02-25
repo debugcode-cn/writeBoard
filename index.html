@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>约- 学写一个字</title>
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css"/>
+    <link href="handwriting.css" rel="stylesheet" type="text/css"/>
+    
+    <script src="jquery-2.1.3.min.js" type="text/javascript"></script>
+   <script src="jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
+   
+    <meta name="viewport"
+          content=" height = device-height,
+                    width = device-width,
+                    initial-scale = 1.0,
+                    minimum-scale = 1.0,
+                    maximum-scale = 1.0,
+                    user-scalable = no"/>
+</head>
+<body>
+	<div id="thepage" data-role="page">
+		<div class="controller" data-role = "header" data-position="fixed">
+	        <div id="clear_btn" class="op_btn"></div>
+	        <div class="clearfix"></div>
+	    </div>
+	    
+	    <div data-role="content">
+	    	<canvas id="canvas">
+		        您的浏览器不支持canvas
+		    </canvas>
+	    </div>
+	    
+	    <div id="" data-role="footer" data-position="fixed">
+	    	<div class="controller">
+		        <div id="black_btn" class="color_btn color_btn_selected"></div>
+		        <div id="blue_btn" class="color_btn"></div>
+		        <div id="green_btn" class="color_btn"></div>
+		        <div id="red_btn" class="color_btn"></div>
+		        <div id="orange_btn" class="color_btn"></div>
+		        <!--<div id="yellow_btn" class="color_btn"></div>-->
+		    </div>
+	    </div>
+	</div>
+    <script src = "handwriting.js"></script>
+</body>
+</html>
