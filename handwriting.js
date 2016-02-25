@@ -1,5 +1,6 @@
 //画布宽度、高度调整
-var canvasWidth = Math.min( 800 , $(window).width() - 20 )
+//var canvasWidth = Math.min( 800 , $(window).width() - 20 )
+var canvasWidth = $(window).width()*0.9
 var canvasHeight = $(window).height()*0.6
 
 //初始画笔颜色
@@ -182,12 +183,12 @@ function drawGrid(){
     context.strokeStyle = "rgb(230,11,9)"
 
     context.beginPath()
-    context.moveTo( 3 , 3 )
-    context.lineTo( canvasWidth - 3 , 3 )
-    context.lineTo( canvasWidth - 3 , canvasHeight - 3 )
-    context.lineTo( 3 , canvasHeight - 3 )
+    context.moveTo( 2 , 2)
+    context.lineTo( canvasWidth - 2 , 2 )
+    context.lineTo( canvasWidth - 2 , canvasHeight - 2 )
+    context.lineTo( 2 , canvasHeight - 2 )
     context.closePath()
-    context.lineWidth = 6
+    context.lineWidth = 4
     context.stroke()
 
     context.beginPath()
