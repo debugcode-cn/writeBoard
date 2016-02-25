@@ -7,8 +7,10 @@ var canvasHeight = $(window).height()*0.6
 var strokeColor = "black"
 //判断鼠标是否按下
 var isMouseDown = false
+
 //判断是否移动
-var isMouseMove = false
+//var isMouseMove = false
+
 //上一个坐标
 var lastLoc = {x:0,y:0}
 //上一个时间戳
@@ -34,6 +36,11 @@ $("#clear_btn").click(
         drawGrid()
     }
 )
+//删除按钮失焦事件
+$("#clear_btn").blur(function(){
+	this.css('background-color',"white")
+})
+
 //颜色板选择事件
 $(".color_btn").click(
     function(e){
